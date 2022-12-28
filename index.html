@@ -1,2 +1,173 @@
-hellow
-tis is a edit...
+<h2>Graduated Return To Play Protocol - GRTP</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+
+		<form action="#">
+
+			<div class="form-floating">
+				<input class="form-control" type="input" id="injurydate" placeholder="Injury Date" required/>
+				<label for="injurydate">Injury Date</label>
+			</div>
+			
+			<div class="form-floating">
+				<input class="form-control" type="input" id="stage1" placeholder="Stage 1" required/>
+				<label for="stage1">Stage 1</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage2a" placeholder="Stage 2a" required/>
+				<label for="stage2a">Stage 2a</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage2b" placeholder="Stage 2b" required/>
+				<label for="stage2b">Stage 2b</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage3" placeholder="Stage 3" required/>
+				<label for="stage3">Stage 3</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage4" placeholder="Stage 4" required/>
+				<label for="stage4">Stage 4</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage5" placeholder="Stage 5" required/>
+				<label for="stage5">Stage 5</label>
+			</div>
+			
+						<div class="form-floating">
+				<input class="form-control" type="input" id="stage6" placeholder="Stage 6" required/>
+				<label for="stage6">Stage 6</label>
+			</div>
+			
+			<!--<input id="stage1" type="input" placeholder="Stage 1" /> 
+			<input id="stage2a" type="input" placeholder="Stage 2a" />
+			<input id="stage2b" type="input" placeholder="Stage 2b" />
+			<input id="stage3" type="input" placeholder="Stage 3" />
+			
+			<input id="stage4" type="input" placeholder="Stage 4" />
+			<input id="stage5" type="input" placeholder="Stage 5" />
+			<input id="stage6" type="input" placeholder="Stage 6" />
+-->
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div id="stage1_panel" class="stage1 overlay-panel overlay-hide">
+				<h1>Stage 1</h1>
+				<p>Initial Rest (Body & Brain)</p>
+				<h1>Objective</h1>
+				<p>Recovery</p>
+				<h1>Activity Allowed</h1>
+				<p>No driving or exercise. Minimise screen time. Consider time off or adaption of study/work.</p>
+				<h1>Duration</h1>
+				<p>No training</p>
+				<h1>% Max Heart Rate</h1>
+				<p>No training</p>
+			</div>
+			<div id="stage2a_panel" class="stage2a overlay-panel overlay-show">
+				<h1>Stage 2a</h1>
+				<p>Relative Rest (Symptom lmited activities)</p>
+				<h1>Objective</h1>
+				<p>Return to normal activities ( as symptoms permit). <br>No symptoms at the end of the 14 days</p>
+				<h1>Activity Allowed</h1>
+				<p>Initially daily activites that do not provoke symptoms. Consider time off or adaption of study/work</p>
+				<h1>Duration</h1>
+				<p>No training</p>
+				<h1>% Max Heart Rate</h1>
+				<p>No training</p>
+			</div>
+			<div id="stage2b_panel" class="stage2b overlay-panel overlay-hide">
+				<h1>Stage 2b</h1>
+				<p>Light aerobic exercise</p>
+				<h1>Objective</h1>
+				<p>Increase heart rate</p>
+				<h1>Activity Allowed</h1>
+				<p>Light jogging for 10-15 minutes, swimming or stationary cycling at low to moderate intensity. No resistence training</p>
+				<h1>Duration</h1>
+				<p>Less than 20 mins</p>
+				<h1>% Max Heart Rate</h1>
+				<p>Less than 70%</p>
+			</div>
+			<div id="stage3_panel" class="stage3 overlay-panel overlay-hide">
+				<h1>Stage 3</h1>
+				<p>Sport-Specific Exercise</p>
+				<h1>Objective</h1>
+				<p>Add movement</p>
+				<h1>Activity Allowed</h1>
+				<p>For example:Running drills. No head impact activities</p>
+				<h1>Duration</h1>
+				<p>Less than 45 mins</p>
+				<h1>% Max Heart Rate</h1>
+				<p>Less than 80%</p>
+			</div>
+			<div id="stage4_panel" class="stage4 overlay-panel overlay-hide">
+				<h1>Stage 4</h1>
+				<p>Non-contact Training</p>
+				<h1>Objective</h1>
+				<p>Exercise, coordination anf cognitive load. A return to learning/work must be achieved before returning to sport</p>
+				<h1>Activity Allowed</h1>
+				<p>For example:Passing drills. May start progressive resistance training</p>
+				<h1>Duration</h1>
+				<p>Less than 60 mins</p>
+				<h1>% Max Heart Rate</h1>
+				<p>Less than 90%</p>
+			</div>
+			<div id="stage5_panel" class="stage5 overlay-panel overlay-hide">
+				<h1>Stage 5</h1>
+				<p>Full Contact Practice</p>
+				<h1>Objective</h1>
+				<p>Restore confidence and assess functional skills</p>
+				<h1>Activity Allowed</h1>
+				<p>Following medical review, return to normal training activities</p>
+				<h1>Duration</h1>
+				<p>XXX</p>
+				<h1>% Max Heart Rate</h1>
+				<p>XXX</p>
+			</div>
+			<div id="stage6_panel" class="stage6 overlay-panel overlay-hide">
+				<h1>Stage 6</h1>
+				<p>Return to Play</p>
+				<h1>Objective</h1>
+				<p>Exercise, coordination and cognitive load</p>
+				<h1>Activity Allowed</h1>
+				<p>Normal ame play</p>
+				<h1>Duration</h1>
+				<p>XXX</p>
+				<h1>% Max Heart Rate</h1>
+				<p>XXX</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		Based on the GRTP protocol from the RFU 
+		<a target="_blank" href="https://www.englandrugby.com/dxdam/04/0453acb5-5fe2-4608-91b0-a2bd191c3016/HEADCASE%20GRTP.pdf">here</a>.
+	</p>
+</footer>
