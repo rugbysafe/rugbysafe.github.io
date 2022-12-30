@@ -1,12 +1,6 @@
 import * as bootstrap from "https://cdn.skypack.dev/bootstrap@5.2.3";
-const stage1 = document.getElementById('stage1');
-const stage2a = document.getElementById('stage2a');
-const stage2b = document.getElementById('stage2b');
-const stage3 = document.getElementById('stage3');
-const stage4 = document.getElementById('stage4');
-const stage5 = document.getElementById('stage5');
-const stage6 = document.getElementById('stage6');
 
+const injury_panel = document.getElementById('injury_panel');
 const stage1_panel = document.getElementById('stage1_panel');
 const stage2a_panel = document.getElementById('stage2a_panel');
 const stage2b_panel = document.getElementById('stage2b_panel');
@@ -24,68 +18,45 @@ const stage4DateInput = document.getElementById("stage4");
 const stage5DateInput = document.getElementById("stage5");
 const stage6DateInput = document.getElementById("stage6");
 
-stage1.addEventListener('focus', () => {
-	stage1_panel.classList.add("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
-});
-stage2a.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.add("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
-});
-stage2b.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.add("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
-});
-stage3.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.add("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
+function _hideall() {
+	var panels = document.getElementsByClassName("overlay-panel");
+	for (var i = 0; i < panels.length; i++) {
+    	panels[i].classList.remove('overlay-show')
+  	}
+}
+injuryDateInput.addEventListener('focus', () => {
+	_hideall();
+	injury_panel.classList.add("overlay-show");
 });
 
-stage4.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
+stage1DateInput.addEventListener('focus', () => {
+	_hideall();
+	stage1_panel.classList.add("overlay-show");
+});
+
+stage2aDateInput.addEventListener('focus', () => {
+	_hideall();
+	stage2a_panel.classList.add("overlay-show");
+});
+stage2bDateInput.addEventListener('focus', () => {
+	_hideall();
+	stage2b_panel.classList.add("overlay-show");
+});
+stage3DateInput.addEventListener('focus', () => {
+	_hideall();
+	stage3_panel.classList.add("overlay-show");
+});
+
+stage4DateInput.addEventListener('focus', () => {
+	_hideall();
 	stage4_panel.classList.add("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
 });
-stage5.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
+stage5DateInput.addEventListener('focus', () => {
+	_hideall();
 	stage5_panel.classList.add("overlay-show");
-	stage6_panel.classList.remove("overlay-show");
 });
-stage6.addEventListener('focus', () => {
-	stage1_panel.classList.remove("overlay-show");
-	stage2a_panel.classList.remove("overlay-show");
-	stage2b_panel.classList.remove("overlay-show");
-	stage3_panel.classList.remove("overlay-show");
-	stage4_panel.classList.remove("overlay-show");
-	stage5_panel.classList.remove("overlay-show");
+stage6DateInput.addEventListener('focus', () => {
+	_hideall();
 	stage6_panel.classList.add("overlay-show");
 });
 
