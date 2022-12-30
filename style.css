@@ -86,7 +86,7 @@ input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
-	margin: 8px 0;
+	margin: 4px 0;
 	width: 100%;
 }
 
@@ -313,4 +313,8 @@ footer a {
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777;
+}
+
+.small-font {
+  font-size: 12px;	
 }
