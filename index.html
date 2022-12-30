@@ -12,82 +12,60 @@
 <!-- partial:index.partial.html -->
 <h2>Graduated Return To Play Protocol - GRTP</h2>
 <div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
 	<div class="form-container sign-in-container">
 
 		<form action="#">
 
 			<div class="form-floating">
-				<input class="form-control" type="input" id="injurydate" placeholder="Injury Date" required/>
+				<input class="form-control" type="input" id="injurydate" required/>
 				<label for="injurydate">Injury Date</label>
 			</div>
 			
 			<div class="form-floating">
-				<input class="form-control" type="input" id="stage1" placeholder="Stage 1" required/>
+				<input class="form-control" type="input" id="stage1" readonly/>
 				<label for="stage1">Stage 1</label>
 			</div>
 			
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage2a" placeholder="Stage 2a" required/>
+				<input class="form-control" type="input" id="stage2a" readonly />
 				<label for="stage2a">Stage 2a</label>
 			</div>
-			
+			<label class="small-font">proceed only if symptom free</label>
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage2b" placeholder="Stage 2b" required/>
+				<input class="form-control" type="input" id="stage2b" readonly/>
 				<label for="stage2b">Stage 2b</label>
 			</div>
 			
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage3" placeholder="Stage 3" required/>
+				<input class="form-control" type="input" id="stage3" readonly/>
 				<label for="stage3">Stage 3</label>
 			</div>
 			
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage4" placeholder="Stage 4" required/>
+				<input class="form-control" type="input" id="stage4" readonly />
 				<label for="stage4">Stage 4</label>
 			</div>
-			
+			<label class="small-font">review by HCP</label>
+
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage5" placeholder="Stage 5" required/>
+				<input class="form-control" type="input" id="stage5" readonly />
 				<label for="stage5">Stage 5</label>
 			</div>
 			
 						<div class="form-floating">
-				<input class="form-control" type="input" id="stage6" placeholder="Stage 6" required/>
+				<input class="form-control" type="input" id="stage6" readonly />
 				<label for="stage6">Stage 6</label>
 			</div>
-			
-			<!--<input id="stage1" type="input" placeholder="Stage 1" /> 
-			<input id="stage2a" type="input" placeholder="Stage 2a" />
-			<input id="stage2b" type="input" placeholder="Stage 2b" />
-			<input id="stage3" type="input" placeholder="Stage 3" />
-			
-			<input id="stage4" type="input" placeholder="Stage 4" />
-			<input id="stage5" type="input" placeholder="Stage 5" />
-			<input id="stage6" type="input" placeholder="Stage 6" />
--->
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
+				<div id="injury_panel" class="injury overlay-panel overlay-show">
+				<h1>Injury Date</h1>
+				<p>Confirm the date of your injury on the left</p>
+				<h1>Expectation</h1>
+				<p>You have been removed from play under the recognised and remove program. This calculator will provide you with the earliest date you can return to play.  At stage 2A you should have no further concussion symptoms before proceeding to the next stages.</p>
+				
 			</div>
 			<div id="stage1_panel" class="stage1 overlay-panel overlay-hide">
 				<h1>Stage 1</h1>
@@ -101,7 +79,7 @@
 				<h1>% Max Heart Rate</h1>
 				<p>No training</p>
 			</div>
-			<div id="stage2a_panel" class="stage2a overlay-panel overlay-show">
+			<div id="stage2a_panel" class="stage2a overlay-panel overlay-hide">
 				<h1>Stage 2a</h1>
 				<p>Relative Rest (Symptom lmited activities)</p>
 				<h1>Objective</h1>
@@ -156,10 +134,6 @@
 				<p>Restore confidence and assess functional skills</p>
 				<h1>Activity Allowed</h1>
 				<p>Following medical review, return to normal training activities</p>
-				<h1>Duration</h1>
-				<p>XXX</p>
-				<h1>% Max Heart Rate</h1>
-				<p>XXX</p>
 			</div>
 			<div id="stage6_panel" class="stage6 overlay-panel overlay-hide">
 				<h1>Stage 6</h1>
@@ -167,11 +141,7 @@
 				<h1>Objective</h1>
 				<p>Exercise, coordination and cognitive load</p>
 				<h1>Activity Allowed</h1>
-				<p>Normal ame play</p>
-				<h1>Duration</h1>
-				<p>XXX</p>
-				<h1>% Max Heart Rate</h1>
-				<p>XXX</p>
+				<p>Normal game play</p>
 			</div>
 		</div>
 	</div>
